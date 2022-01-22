@@ -57,6 +57,7 @@ a:focus {
 
 .portrait {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .portrait img {
