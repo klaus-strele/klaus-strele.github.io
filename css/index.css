@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, img, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+}
+
+.intro {
+}
+
+.portrait {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    color: dimgrey;
+    font-size: 0.75rem;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    display: inline;
+}
+
+.intro h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.intro h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: dimgrey;
+}
+.portrait img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contact p {
+    color: dimgrey;
+}
+
+.contact ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.contact li {
+    display: inline;
+}
