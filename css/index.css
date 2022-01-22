@@ -83,13 +83,14 @@ a:focus {
 
 .intro h2 {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--secondary-color);
 }
 
 .contact {
     text-align: center;
     color: var(--secondary-color);
+    margin-top: 1rem;
 }
 
 
