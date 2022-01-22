@@ -82,7 +82,7 @@ a:focus {
 
 .intro h2 {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--secondary-color);
 }
 
