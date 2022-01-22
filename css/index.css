@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6b6b6b;
+    --link-color: blue;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,35 +21,76 @@ body {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:link {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    background-color: cadetblue;
+ }
+
+ a:hover {
+     border-bottom: 1px solid;
+     background-color: cornsilk;
+ }
+
+ a:active {
+     background-color: red;
+ }
+
 .container {
     width: min(1200px, 90%);
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
-.logo {
-    text-align: center;
-}
-
-.nav {
-    text-align: center;
-}
-
-.intro {
-}
+/* Portrait picture */
 
 .portrait {
     text-align: center;
 }
 
-.contact {
+.portrait img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Introduction */
+
+.intro {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.footer {
-    text-align: center;
-    color: dimgrey;
-    font-size: 0.75rem;
+.intro h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary-color);
 }
+
+.intro h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.contact {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
 
 .nav ul {
     list-style: none;
@@ -53,26 +100,6 @@ body {
     display: inline;
 }
 
-.intro h1 {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.intro h2 {
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: dimgrey;
-}
-.portrait img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.contact p {
-    color: dimgrey;
-}
 
 .contact ul {
     list-style: none;
@@ -81,4 +108,9 @@ body {
 
 .contact li {
     display: inline;
+}
+
+
+.nav {
+    text-align: center;
 }
