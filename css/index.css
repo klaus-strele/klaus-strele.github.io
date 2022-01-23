@@ -1,7 +1,7 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #6b6b6b;
-    --link-color: #000000;
+    --link-color: #2BAE66FF;
 }
 
 * {
@@ -27,26 +27,20 @@ a {
 }
 
 a:link {
-    color: var(--link-color);
+    color: var(--secondary-color);
 }
 
 a:visited {
+    color: var(--secondary-color);
+}
+
+a:hover {
     color: var(--link-color);
 }
 
-a:focus {
+a:active {
     border-bottom: 1px solid;
-    background-color: cadetblue;
- }
-
- a:hover {
-     border-bottom: 1px solid;
-     background-color: cornsilk;
- }
-
- a:active {
-     background-color: red;
- }
+}
 
 .container {
     width: min(1200px, 90%);
@@ -105,7 +99,6 @@ a:focus {
 .contact {
     text-align: center;
     color: var(--secondary-color);
-    margin-top: 15px;
 }
 
 .contact ul {
