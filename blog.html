@@ -3,15 +3,11 @@ layout: default
 title: Blog Klaus Strele
 ---
 <main class="container">
-    <div class="introduction">
-        <div class="title">
-            Klaus Strele
-        </div>
-        <div class="subtitle">
-            Thinker, analyst and developer.
-        </div>
-        <div class="subtitle">
-            Originally from Austria, based in Zurich.
-        </div>
-    </div>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </main>
